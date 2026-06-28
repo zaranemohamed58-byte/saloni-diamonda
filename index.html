@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALONI DIAMONDA — Premium Diamond Price Calculator</title>
+  <meta name="description" content="SALONI DIAMONDA delivers a premium gaming experience for instant diamond price calculations, pricing guides, FAQ, and support.">
+  <meta property="og:title" content="SALONI DIAMONDA — Premium Diamond Price Calculator">
+  <meta property="og:description" content="Instant diamond pricing with a modern dark gaming interface, responsive calculator, pricing tables, FAQ, and professional support.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-wrap">
+      <div class="logo-icon">SD</div>
+      <div>
+        <p class="eyebrow">SALONI DIAMONDA</p>
+        <h1 class="brand-title">Calculate Diamond Prices Instantly</h1>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="index.html#pricing">Prices</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#blog">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-copy glass-card">
+        <span class="section-label">Premium gaming finance</span>
+        <h2>Calculate Diamond Prices Instantly with a modern esports UI.</h2>
+        <p>SALONI DIAMONDA gives you lightning-fast diamond pricing in Moroccan Dirhams, with live results and a polished dark glassmorphism experience.</p>
+        <div class="hero-actions">
+          <a href="calculator.html" class="button button-primary">Launch Calculator</a>
+          <a href="index.html#pricing" class="button button-secondary">Explore Prices</a>
+        </div>
+        <ul class="hero-stats">
+          <li><span>0.01</span><p>DH accuracy</p></li>
+          <li><span>Live</span><p>Realtime results</p></li>
+          <li><span>Mobile</span><p>Fully responsive</p></li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="visual-card glass-card">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">Diamond pricing</p>
+              <h3>SALONI DIAMONDA Live Preview</h3>
+            </div>
+            <span class="badge">Premium</span>
+          </div>
+          <div class="price-metrics">
+            <div>
+              <p>Diamonds</p>
+              <strong>1,250</strong>
+            </div>
+            <div>
+              <p>Rate</p>
+              <strong>15 DH</strong>
+            </div>
+            <div>
+              <p>Total</p>
+              <strong>187.50 DH</strong>
+            </div>
+          </div>
+          <div class="visual-chart">
+            <span style="--left: 8%"></span>
+            <span style="--left: 26%"></span>
+            <span style="--left: 46%"></span>
+            <span style="--left: 66%"></span>
+            <span style="--left: 86%"></span>
+          </div>
+        </div>
+        <div class="visual-spark"></div>
+      </div>
+    </section>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span></span>
+      <p>Scroll to explore</p>
+    </div>
+
+    <section id="calculator" class="section-block">
+      <div class="section-head">
+        <span class="section-label">Live calculator</span>
+        <h2>Diamond pricing updates while you type.</h2>
+      </div>
+      <div class="calculator-grid">
+        <div class="glass-card calculator-panel">
+          <div class="input-group">
+            <label for="diamonds">Number of Diamonds</label>
+            <input type="number" id="diamonds" placeholder="0" min="0" inputmode="numeric" />
+            <p class="input-note">Enter the diamond bundle quantity.</p>
+          </div>
+          <div class="input-group">
+            <label for="price">Price per 100 Diamonds</label>
+            <input type="number" id="price" placeholder="15" min="0" step="0.01" value="15" inputmode="decimal" />
+            <p class="input-note">Default is 15 DH per 100 diamonds.</p>
+          </div>
+          <div class="button-row">
+            <button id="resetBtn" class="button button-secondary">Reset</button>
+            <button id="copyBtn" class="button button-primary">Copy Result</button>
+          </div>
+        </div>
+        <div class="glass-card result-panel">
+          <p class="result-label">Estimated total</p>
+          <div class="result-box" id="resultBox"><span id="result">0 DH</span></div>
+          <p id="errorMessage" class="error-text" aria-live="polite"></p>
+          <p class="formula-note">Formula: Total = (Diamonds / 100) × Price Per 100</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section-block">
+      <div class="section-head">
+        <span class="section-label">Pricing table</span>
+        <h2>Choose the perfect diamond planning package.</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="pricing-card glass-card">
+          <span class="plan-tag">Starter</span>
+          <h3>Essential</h3>
+          <p class="price">Free</p>
+          <ul>
+            <li>Basic calculator access</li>
+            <li>Live diamond pricing</li>
+            <li>Mobile-first UI</li>
+          </ul>
+          <a href="calculator.html" class="button button-primary">Start now</a>
+        </article>
+        <article class="pricing-card glass-card featured">
+          <span class="plan-tag">Best value</span>
+          <h3>Pro</h3>
+          <p class="price">15 DH</p>
+          <ul>
+            <li>All starter features</li>
+            <li>Pricing guides</li>
+            <li>Advanced analytics visuals</li>
+          </ul>
+          <a href="calculator.html" class="button button-primary">Choose Pro</a>
+        </article>
+        <article class="pricing-card glass-card">
+          <span class="plan-tag">Premium</span>
+          <h3>Elite</h3>
+          <p class="price">25 DH</p>
+          <ul>
+            <li>Full premium layout</li>
+            <li>Priority support</li>
+            <li>Ad placeholder ready</li>
+          </ul>
+          <a href="contact.html" class="button button-secondary">Contact us</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="ad-slot">Ad unit placeholder</div>
+
+    <section id="why-us" class="section-block">
+      <div class="section-head">
+        <span class="section-label">Why choose us</span>
+        <h2>Powerful features designed for gamers and diamond traders.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card glass-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Instant results</h3>
+          <p>Live calculations as you type, so you never lose momentum.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <div class="feature-icon">💎</div>
+          <h3>Accurate pricing</h3>
+          <p>Reliable DH totals using a simple diamond formula.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <div class="feature-icon">📱</div>
+          <h3>Responsive design</h3>
+          <p>Designed to look premium on desktop, tablet, and mobile.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Esports style</h3>
+          <p>Dark glassmorphism UI with neon blue and gold accents.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure layout</h3>
+          <p>Clean, accessible code built with professional structure.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Fast loading</h3>
+          <p>Optimized styles and interactions for smooth performance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section-block">
+      <div class="section-head">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <button type="button" class="faq-question">How is the diamond price calculated?<span>+</span></button>
+          <div class="faq-answer"><p>The tool calculates the total by dividing diamonds by 100 and multiplying by the price per 100 diamonds.</p></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" class="faq-question">Can I use it on mobile?<span>+</span></button>
+          <div class="faq-answer"><p>Yes, the app is fully responsive and designed for mobile-first use.</p></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" class="faq-question">How can I contact support?<span>+</span></button>
+          <div class="faq-answer"><p>You can contact us anytime by email: <a href="mailto:zaramohamed189@gmail.com">zaramohamed189@gmail.com</a></p></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" class="faq-question">Is this ready for ads?<span>+</span></button>
+          <div class="faq-answer"><p>Yes, clean ad placeholder spaces are included to support future Google AdSense integration.</p></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" class="faq-question">Does it support DH currency?<span>+</span></button>
+          <div class="faq-answer"><p>Yes, all results are formatted and displayed in Moroccan Dirhams (DH).</p></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="ad-slot">Ad unit placeholder</div>
+
+    <section id="blog" class="section-block">
+      <div class="section-head">
+        <span class="section-label">Latest articles</span>
+        <h2>Insights from SALONI DIAMONDA.</h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card glass-card">
+          <span>Strategy</span>
+          <h3>How to optimize diamond purchases in 2026</h3>
+          <p>Understand pricing patterns and maximize value when buying the best bundles.</p>
+          <a href="contact.html" class="link-arrow">Read more</a>
+        </article>
+        <article class="blog-card glass-card">
+          <span>Guide</span>
+          <h3>Gaming finance essentials for competitive players</h3>
+          <p>Quick tips for managing your in-game currency and making smart purchase decisions.</p>
+          <a href="contact.html" class="link-arrow">Read more</a>
+        </article>
+        <article class="blog-card glass-card">
+          <span>Design</span>
+          <h3>Why premium UI matters for gaming tools</h3>
+          <p>Discover the power of polished interfaces in improving trust and speed.</p>
+          <a href="contact.html" class="link-arrow">Read more</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block newsletter-section">
+      <div class="glass-card newsletter-card">
+        <div>
+          <span class="section-label">Newsletter</span>
+          <h2>Stay Updated</h2>
+          <p>Receive the latest updates and improvements from SALONI DIAMONDA.</p>
+        </div>
+        <form class="newsletter-form" aria-label="Newsletter subscription form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="button button-primary">Subscribe</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-block follow-section">
+      <div class="section-head">
+        <span class="section-label">Community</span>
+        <h2>Follow Us</h2>
+      </div>
+      <div class="social-grid">
+        <article class="social-card glass-card">
+          <div class="social-icon">📱</div>
+          <h3>Instagram</h3>
+          <p>Coming Soon</p>
+        </article>
+        <article class="social-card glass-card">
+          <div class="social-icon">🗨️</div>
+          <h3>Discord</h3>
+          <p>Coming Soon</p>
+        </article>
+        <article class="social-card glass-card">
+          <div class="social-icon">✦</div>
+          <h3>X / Twitter</h3>
+          <p>Coming Soon</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-block contact-section">
+      <div class="section-head">
+        <span class="section-label">Contact</span>
+        <h2>Need help? Contact us anytime.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="glass-card contact-info">
+          <div class="contact-icon">✉</div>
+          <h3>Connect with SALONI DIAMONDA</h3>
+          <p>Have questions about the calculator, support, or future updates? Send a message and we will reply as soon as possible.</p>
+          <div class="contact-meta">
+            <div><strong>Owner</strong><p>Mohamed Zara</p></div>
+            <div><strong>Brand</strong><p>SALONI DIAMONDA</p></div>
+            <div><strong>Email</strong><p><a href="mailto:zaramohamed189@gmail.com">zaramohamed189@gmail.com</a></p></div>
+          </div>
+        </div>
+        <form class="glass-card contact-form" aria-label="Contact form">
+          <div class="input-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" placeholder="Your name" required />
+          </div>
+          <div class="input-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" placeholder="you@example.com" required />
+          </div>
+          <div class="input-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" placeholder="How can we help?" required />
+          </div>
+          <div class="input-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" rows="5" placeholder="Tell us more about your request." required></textarea>
+          </div>
+          <button type="submit" class="button button-primary">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">SALONI DIAMONDA</p>
+        <p>Premium diamond pricing tools built with gaming aesthetics and professional support in mind.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="index.html#pricing">Prices</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p><a href="mailto:zaramohamed189@gmail.com">Email: zaramohamed189@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p>Instagram — Coming Soon</p>
+        <p>Discord — Coming Soon</p>
+        <p>X / Twitter — Coming Soon</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 SALONI DIAMONDA. All rights reserved.</p>
+  </footer>
+
+  <a class="floating-contact-btn" href="mailto:zaramohamed189@gmail.com" aria-label="Contact SALONI DIAMONDA">✉ Contact</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
