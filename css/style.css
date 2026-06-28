@@ -307,7 +307,8 @@ main {
   gap: 24px;
 }
 
-.profile-img {
+.profile-img,
+.hero-visual-image {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -317,6 +318,22 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-visual-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hero-visual-image {
+  width: min(100%, 320px);
+  height: auto;
+  aspect-ratio: 9 / 11;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
 .hero-copy h2,
