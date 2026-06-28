@@ -21,11 +21,18 @@
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="calculator.html">Calculator</a>
-      <a href="prices.html">Prices</a>
-      <a href="tournaments.html" class="nav-link">Tournaments</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <a href="calculator.html" data-i18n="navCalculator">Calculator</a>
+      <a href="prices.html" data-i18n="navPrices">Prices</a>
+      <a href="tournaments.html" class="nav-link" data-i18n="navTournaments">Tournaments</a>
+      <a href="contact.html" class="active" data-i18n="navContact">Contact</a>
+      <label class="lang-switcher">
+        <select aria-label="Select language">
+          <option value="en">🇺🇸 English</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="ar">🇲🇦 العربية</option>
+        </select>
+      </label>
     </nav>
   </header>
 
@@ -33,9 +40,9 @@
     <section class="section-block">
       <div class="page-banner glass-card contact-hero">
         <div>
-          <span class="section-label">Contact</span>
-          <h2>Need help? Contact us anytime.</h2>
-          <p>Reach out for support, feature guidance, or partnership details. Our team is ready to help you with the premium SALONI DIAMONDA experience.</p>
+          <span class="section-label" data-i18n="contactLabel">Contact</span>
+          <h2 data-i18n="contactTitle">Need help? Contact us anytime.</h2>
+          <p data-i18n="contactSubtitle">Reach out for support, feature guidance, or partnership details. Our team is ready to help you with the premium SALONI DIAMONDA experience.</p>
         </div>
         <div class="contact-card-preview glass-card">
           <div class="contact-icon">✉</div>
@@ -58,22 +65,22 @@
       </div>
       <form class="glass-card contact-form" aria-label="Contact form">
         <div class="input-group">
-          <label for="contact-name">Name</label>
+          <label for="contact-name" data-i18n="formName">Name</label>
           <input type="text" id="contact-name" placeholder="Your name" required>
         </div>
         <div class="input-group">
-          <label for="contact-email">Email</label>
+          <label for="contact-email" data-i18n="formEmail">Email</label>
           <input type="email" id="contact-email" placeholder="you@example.com" required>
         </div>
         <div class="input-group">
-          <label for="contact-subject">Subject</label>
+          <label for="contact-subject" data-i18n="formSubject">Subject</label>
           <input type="text" id="contact-subject" placeholder="How can we help?" required>
         </div>
         <div class="input-group">
-          <label for="contact-message">Message</label>
+          <label for="contact-message" data-i18n="formMessage">Message</label>
           <textarea id="contact-message" rows="5" placeholder="Tell us more about your request." required></textarea>
         </div>
-        <button type="submit" class="button button-primary">Send message</button>
+        <button type="submit" class="button button-primary" data-i18n="contactButton">Send message</button>
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
     </section>

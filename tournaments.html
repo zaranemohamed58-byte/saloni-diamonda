@@ -18,54 +18,85 @@
 <body>
 
   <header class="site-header">
-    <div class="header-container">
-      <div class="logo"><strong>SD</strong> SALONI DIAMONDA</div>
-      <nav class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="calculator.html">Calculator</a>
-        <a href="tournaments.html" class="active">Tournaments</a>
-        <a href="contact.html">Contact</a>
+    <div class="brand-wrap">
+      <div class="logo-icon">SD</div>
+      <div>
+        <p class="eyebrow">SALONI DIAMONDA</p>
+        <h1 class="brand-title">Esports tournaments</h1>
+      </div>
+    </div>
+    <div class="nav-controls">
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="calculator.html" data-i18n="navCalculator">Calculator</a>
+        <a href="tournaments.html" class="active" data-i18n="navTournaments">Tournaments</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
       </nav>
+      <label class="lang-switcher">
+        <select aria-label="Select language">
+          <option value="en">🇺🇸 English</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="ar">🇲🇦 العربية</option>
+        </select>
+      </label>
     </div>
   </header>
 
   <main style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">
     <div style="text-align: center; margin-bottom: 50px;">
-      <span style="color: #ffb700; text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">Esports Arena</span>
-      <h1 style="font-size: 2.5rem; color: #fff; margin: 10px 0;">Active Tournaments & Custom Rooms</h1>
-      <p style="color: #a0aec0;">Enter your Game ID directly below to register!</p>
+      <span class="section-label" data-i18n="tournamentHeroLabel">Esports Arena</span>
+      <h1 style="font-size: 2.5rem; color: #fff; margin: 10px 0;" data-i18n="tournamentHeroTitle">Active Tournaments & Custom Rooms</h1>
+      <p style="color: #a0aec0;" data-i18n="tournamentHeroSubtitle">Enter your Game ID directly below to register!</p>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
       <article class="glass-card" style="padding: 30px; border-radius: 16px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); text-align: center;">
-        <span style="background: rgba(0, 183, 255, 0.1); color: #00b7ff; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">DAILY ROOM</span>
-        <h2 style="font-size: 1.8rem; color: #fff; margin: 15px 0;">Solo Diamond Rush</h2>
-        <p style="color: #a0aec0; margin-bottom: 20px;">Prize Pool: <strong style="color: #ffb700;">500 💎</strong><br>Date: Tonight at 22:00 GMT</p>
+        <span style="background: rgba(0, 183, 255, 0.1); color: #00b7ff; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;" data-i18n="dailyRoom">DAILY ROOM</span>
+        <h2 style="font-size: 1.8rem; color: #fff; margin: 15px 0;" data-i18n="dailyTitle">Solo Diamond Rush</h2>
+        <p style="color: #a0aec0; margin-bottom: 20px;" data-i18n="dailyDesc">Prize Pool: <strong style="color: #ffb700;">500 💎</strong><br>Date: Tonight at 22:00 GMT</p>
 
-        <button onclick="toggleForm('form-daily')" class="button button-primary" style="width: 100%;">Register Now</button>
+        <button onclick="toggleForm('form-daily')" class="button button-primary" style="width: 100%;" data-i18n="registerNow">Register Now</button>
 
         <div id="form-daily" class="reg-form">
           <input type="text" id="id-daily" class="reg-input" placeholder="Enter Game ID here...">
-          <button onclick="registerPlayer('id-daily', 'Solo Diamond Rush')" class="submit-btn">Confirm Slots</button>
+          <button onclick="registerPlayer('id-daily', 'Solo Diamond Rush')" class="submit-btn" data-i18n="confirmSlots">Confirm Slots</button>
         </div>
       </article>
 
       <article class="glass-card" style="padding: 30px; border-radius: 16px; background: rgba(255, 255, 255, 0.02); border: 1px solid #ffb700; text-align: center;">
-        <span style="background: rgba(255, 183, 0, 0.1); color: #ffb700; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">WEEKLY CUP</span>
-        <h2 style="font-size: 1.8rem; color: #fff; margin: 15px 0;">ZARANE 100K Championship</h2>
-        <p style="color: #a0aec0; margin-bottom: 20px;">Prize Pool: <strong style="color: #ffb700;">2,500 💎</strong><br>Date: Every Sunday</p>
+        <span style="background: rgba(255, 183, 0, 0.1); color: #ffb700; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;" data-i18n="weeklyRoom">WEEKLY CUP</span>
+        <h2 style="font-size: 1.8rem; color: #fff; margin: 15px 0;" data-i18n="weeklyTitle">ZARANE 100K Championship</h2>
+        <p style="color: #a0aec0; margin-bottom: 20px;" data-i18n="weeklyDesc">Prize Pool: <strong style="color: #ffb700;">2,500 💎</strong><br>Date: Every Sunday</p>
 
-        <button onclick="toggleForm('form-weekly')" class="button button-primary" style="width: 100%; background: #ffb700; color: #000;">Register Now</button>
+        <button onclick="toggleForm('form-weekly')" class="button button-primary" style="width: 100%; background: #ffb700; color: #000;" data-i18n="registerNow">Register Now</button>
 
         <div id="form-weekly" class="reg-form">
           <input type="text" id="id-weekly" class="reg-input" placeholder="Enter Game ID here...">
-          <button onclick="registerPlayer('id-weekly', 'ZARANE 100K Champ')" class="submit-btn" style="background: #ffb700; color: #000;">Confirm Slots</button>
+          <button onclick="registerPlayer('id-weekly', 'ZARANE 100K Champ')" class="submit-btn" style="background: #ffb700; color: #000;" data-i18n="confirmSlots">Confirm Slots</button>
         </div>
       </article>
     </div>
 
+    <section class="glass-card" style="padding: 30px; border-radius: 16px; background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.05); margin-bottom: 30px;">
+      <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px;" data-i18n="hallOfFameTitle">Hall of Fame</h2>
+      <p style="color: #a0aec0; margin-bottom: 18px;" data-i18n="hallOfFameSubtitle">Recent winners and standout champions.</p>
+      <div style="overflow-x: auto;">
+        <table class="hall-of-fame-table">
+          <thead>
+            <tr>
+              <th data-i18n="rank">Rank</th>
+              <th data-i18n="playerId">Player ID</th>
+              <th data-i18n="tournament">Tournament</th>
+              <th data-i18n="prize">Prize</th>
+            </tr>
+          </thead>
+          <tbody id="hall-of-fame-body"></tbody>
+        </table>
+      </div>
+    </section>
+
     <div class="glass-card" style="padding: 30px; border-radius: 16px; background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.05);">
-      <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px;">📋 Registered Players List</h2>
+      <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px;" data-i18n="registeredPlayersTitle">📋 Registered Players List</h2>
       <div style="overflow-x: auto;">
         <table class="tournament-table">
           <thead>
@@ -73,7 +104,7 @@
               <th>No.</th>
               <th>Player Game ID</th>
               <th>Tournament</th>
-              <th>Status</th>
+              <th data-i18n="status">Status</th>
             </tr>
           </thead>
           <tbody id="player-list-body"></tbody>
@@ -106,6 +137,25 @@
       loadPlayers();
     }
 
+    const hallOfFameRows = [
+      { rank: 1, playerId: 'ZARANE-01', tournament: 'ZARANE 100K Championship', prize: '2,500 💎' },
+      { rank: 2, playerId: 'DIA-77', tournament: 'Solo Diamond Rush', prize: '1,000 💎' },
+      { rank: 3, playerId: 'MORO-09', tournament: 'Weekend Clash', prize: '750 💎' }
+    ];
+
+    function renderHallOfFame() {
+      const tbody = document.getElementById('hall-of-fame-body');
+      if (!tbody) return;
+      tbody.innerHTML = hallOfFameRows.map(row => `
+        <tr>
+          <td>#${row.rank}</td>
+          <td style="font-family: monospace; color: #00b7ff; font-weight: bold;">${row.playerId}</td>
+          <td>${row.tournament}</td>
+          <td>${row.prize}</td>
+        </tr>
+      `).join('');
+    }
+
     function loadPlayers() {
       const tbody = document.getElementById('player-list-body');
       let players = JSON.parse(localStorage.getItem('registeredPlayers')) || [];
@@ -125,8 +175,13 @@
       `).join('');
     }
 
-    window.onload = loadPlayers;
+    window.onload = function () {
+      loadPlayers();
+      renderHallOfFame();
+    };
   </script>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>

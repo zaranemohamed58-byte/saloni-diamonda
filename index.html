@@ -25,20 +25,27 @@
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
     <nav class="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="calculator.html">Calculator</a>
-      <a href="prices.html">Prices</a>
-      <a href="tournaments.html" class="nav-link">Tournaments</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="active" data-i18n="navHome">Home</a>
+      <a href="calculator.html" data-i18n="navCalculator">Calculator</a>
+      <a href="prices.html" data-i18n="navPrices">Prices</a>
+      <a href="tournaments.html" class="nav-link" data-i18n="navTournaments">Tournaments</a>
+      <a href="contact.html" data-i18n="navContact">Contact</a>
+      <label class="lang-switcher">
+        <select aria-label="Select language">
+          <option value="en">🇺🇸 English</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="ar">🇲🇦 العربية</option>
+        </select>
+      </label>
     </nav>
   </header>
 
   <main>
     <section id="home" class="hero-section" style="grid-template-columns: 1fr;">
       <div class="hero-copy glass-card" style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <span class="section-label">Premium gaming finance</span>
-        <h2>Welcome to SALONI DIAMONDA.</h2>
-        <p>Your premium destination for clear diamond pricing, elegant design, and fast access to the best rates in Moroccan Dirhams.</p>
+        <span class="section-label" data-i18n="heroSectionLabel">Premium gaming finance</span>
+        <h2 data-i18n="heroTitle">Welcome to SALONI DIAMONDA.</h2>
+        <p data-i18n="heroSubtitle">Your premium destination for clear diamond pricing, elegant design, and fast access to the best rates in Moroccan Dirhams.</p>
       </div>
     </section>
 
