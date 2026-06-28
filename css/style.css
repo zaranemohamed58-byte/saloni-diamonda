@@ -307,6 +307,18 @@ main {
   gap: 24px;
 }
 
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-copy h2,
 .section-head h2 {
   font-size: clamp(2.5rem, 3vw, 3.8rem);

@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const errorMessage = document.getElementById('errorMessage');
   const copyBtn = document.getElementById('copyBtn');
   const resetBtn = document.getElementById('resetBtn');
-  const contactForm = document.querySelector('.contact-form');
+  const contactForm = document.querySelector('.contact-form form');
   const newsletterForms = document.querySelectorAll('.newsletter-form');
 
   if (navToggle && navMenu) {
