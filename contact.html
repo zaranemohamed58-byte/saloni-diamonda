@@ -63,26 +63,28 @@
           <div><strong>Email</strong><p><a href="mailto:zaramohamed189@gmail.com">zaramohamed189@gmail.com</a></p></div>
         </div>
       </div>
-      <form action="https://formspree.io/f/mqevbvyl" method="POST" class="glass-card contact-form" aria-label="Contact form">
-        <div class="input-group">
-          <label for="contact-name" data-i18n="formName">Name</label>
-          <input type="text" id="contact-name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="input-group">
-          <label for="contact-email" data-i18n="formEmail">Email</label>
-          <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
-        </div>
-        <div class="input-group">
-          <label for="contact-subject" data-i18n="formSubject">Subject</label>
-          <input type="text" id="contact-subject" name="subject" placeholder="How can we help?" required>
-        </div>
-        <div class="input-group">
-          <label for="contact-message" data-i18n="formMessage">Message</label>
-          <textarea id="contact-message" name="message" rows="5" placeholder="Tell us more about your request." required></textarea>
-        </div>
-        <button type="submit" class="button button-primary" data-i18n="contactButton">Send message</button>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
+      <div class="glass-card contact-form">
+        <form action="https://formspree.io/f/mqevbvyl" method="POST">
+          <div class="input-group">
+            <label for="contact-name" data-i18n="formName">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-email" data-i18n="formEmail">Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-subject" data-i18n="formSubject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="How can we help?" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-message" data-i18n="formMessage">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell us more about your request." required></textarea>
+          </div>
+          <button type="submit" class="button button-primary" data-i18n="contactButton">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
