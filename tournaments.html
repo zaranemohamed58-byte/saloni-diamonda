@@ -128,7 +128,16 @@
         return;
       }
 
-      let players = JSON.parse(localStorage.getItem('registeredPlayers')) || [];
+      const players = JSON.parse(localStorage.getItem('registeredPlayers')) || [];
+      const alreadyRegistered = players.some(player =>
+        player.id.toLowerCase() === gameId.toLowerCase() && player.tournament === tournamentName
+      );
+
+      if (alreadyRegistered) {
+        alert("You are already registered for this tournament!");
+        return;
+      }
+
       players.push({ id: gameId, tournament: tournamentName, status: 'Registered' });
       localStorage.setItem('registeredPlayers', JSON.stringify(players));
 
@@ -158,7 +167,7 @@
 
     function loadPlayers() {
       const tbody = document.getElementById('player-list-body');
-      let players = JSON.parse(localStorage.getItem('registeredPlayers')) || [];
+      const players = JSON.parse(localStorage.getItem('registeredPlayers')) || [];
 
       if (players.length === 0) {
         tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; color: #a0aec0;">No players registered yet. Be the first!</td></tr>`;
