@@ -307,24 +307,11 @@ main {
   gap: 24px;
 }
 
-.profile-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.profile-img {
-  width: min(100%, 320px);
-  height: auto;
-  aspect-ratio: 9 / 11;
-  object-fit: cover;
-  border-radius: 28px;
-  border: 1px solid rgba(255,255,255,0.16);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.animated-welcome {
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 0.02em;
 }
 
 .hero-copy h2,
